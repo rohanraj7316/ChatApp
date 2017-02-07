@@ -6,8 +6,9 @@ var mongoose = require('mongoose');
 var port = process.env.PORT || 8080 ;
 var apiRouter = express.Router();
 //var deviceCreation = require(./deviceDetail);
-var Devices = require('./deviceDetail');
-
+var Devices = require('./app/models/UserDetail');
+var jwt = require('jsonwebtoken');
+var superSecret = 'RohanRaj';
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
@@ -94,7 +95,7 @@ apiRouter.post('/auth',function(req,res){
             res.json({message:'authentication failed',
                         sucess: false});
         }else if(user){
-            var validPassword = user.comparePassword(req.body.password);
+            var validPassword = user.passComparison(req.body.password);
             if(!validPassword){
                 res.json({
                     sucess:false,
@@ -105,7 +106,7 @@ apiRouter.post('/auth',function(req,res){
                     name : user.name,
                     username: user.username
                 },superSecret,{
-                    expiresInMinutes : 1440
+                    expiresIn : '1h'
                 });
                 res.json({
                     sucess: true,

@@ -1,20 +1,2220 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<script>
-    function printDetail() {
-        console.log('printDetail');
-    }
-    function secondDetail() {
-        console.log('secondDetail');
-    }
-    function printNumber(var num,function callback) {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie6 ie" lang="en"><![endif]-->
+<!--[if IE 7]>   <html class="no-js ie7 ie" lang="en"><![endif]-->
+<!--[if IE 8]>   <html class="no-js ie8 ie" lang="en"><![endif]-->
+<!--[if IE 9]>   <html class="no-js ie9 ie" lang="en"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+    <head>
+        <title>Fitbit Login</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        
+        <meta name="keywords" content="keywords" />
+        <meta name="globalsign-domain-verification" content="V9sDmfc1iburMGCqI6KgZshFgT7vnWwHuvjKjfUcbg" />
+
+        
+
+        <meta name="description" content="Log in to your Fitbit dashboard to see your progress charts and graphs, set goals, review achievement badges, compete on the leaderboard and more.">
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+            
+            
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.onerror = function(msg){
+                var headEl = document.getElementsByTagName("head")[0];
+                headEl.setAttribute("data-js-error",msg);
+            }
+        </script>
+
+        
+
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+
+        
+        
+            
+        
+        
+        
+
+        
+        
+            
+            
+                <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/weightsite.site.web.css.fonts_all.css.50bbcad851acd9bcf83f39c47a549fb5.css" charset="utf-8"/>
+                <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/weightsite.site.web.css.font-awesome.css.769d29b69445a89c18e0e5d3cafd3fe6.css" charset="utf-8"/>
+                <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/app.fonts.icons.css.90dc370d5529e29553893b910fe66101.css" charset="utf-8"/>
+            
+        
+
+        
+        <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/TEMP.js.lib.jqueryui.1.8.1.themes.base.jquery.ui.core.css.83095e8dddafc16160c7e31f5baf00d7.css" charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/TEMP.js.lib.jqueryui.1.8.1.themes.base.jquery.ui.theme.css.66fcaccecd20b185f53c210655794dc7.css" charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/app.layouts.baseMarketing.7.css.d65868c2b9d7e3d13532d8d479d3af79.css" charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/base.css.d9f23276e0a856cfd0c7684596fcb9c9.css" charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/app.layouts.baseMarketing.8.css.e328052172e89063764a7def963b9ab2.css" charset="utf-8"/>
+        
+
+
+        
+        <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/weightsite.site.web.css.app.common.buttons.css.665bf48dd52e6407c7e5a4852ebdc392.css" charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/weightsite.site.web.css.app.common.forms.css.6894034b748b96460f8816ab4e007475.css" charset="utf-8"/>
+
+        
+            
+                <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/app.layouts.baseMarketing.copernicus.css.222b8d4b3b93d567397b69b02c526ade.css" charset="utf-8"/>
+            
+            
+        
+
+
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/app.layouts.baseMarketing.2.css.08f34e7d6575db817992ff67bcca0016.css" charset="utf-8"/>
+        <![endif]-->
+
+        <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/weightsite.site.web.css.fitbit.app.modules.dropdown.css.ced9c1344161e9710da3e07d53654f77.css" charset="utf-8"/>
+        
+            
+                <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/app.layouts.baseMarketing.2016Footer.css.9d29dc16bea656152d252e6a7c051032.css" charset="utf-8"/>
+                <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/app.layouts.baseMarketing.footerIcons.css.7f13db426c32bd6247ae17ff88d0a638.css" charset="utf-8"/>
+            
+            
+        
+        
+        
+
+        <!--[if IE]>
+            <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/app.layouts.baseMarketing.4.css.44caee2d692e1bd49d53ee0f199ce49d.css" charset="utf-8"/>
+        <![endif]-->
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="https://assets.fitbit.com/production/app.layouts.baseMarketing.ie8.js.7ac8da9ac704473f10df3b1f635324c0.js" charset="utf-8"></script>
+        <![endif]-->
+        <!--[if lte IE 7]>
+            <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/app.layouts.baseMarketing.6.css.33c7842eb65d665e9b2194a03f3e9009.css" charset="utf-8"/>
+        <![endif]-->
+
+        
+        <script type="text/javascript" src="https://assets.fitbit.com/production/app.layouts.baseMarketing.15.js.042fa5a3300841a0724ca98adf6e47e0.js" charset="utf-8"></script>
+        
+
+	
+	<link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/TEMP.js.lib.jqueryui.1.8.1.themes.base.jquery.ui.radiocheckbox.css.7e4b9f9967649cc9299ea26b57dc2491.css" charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/TEMP.js.lib.jqueryui.1.8.1.themes.base.jquery.ui.selectmenu.css.f6c9a62813abe67ff13b913d6462b663.css" charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/app.login.authenticate.0.css.c36cb0af4628e0921a344a3bd4f62ca5.css" charset="utf-8"/>
+
+	
+    <link rel="stylesheet" type="text/css" href="https://assets.fitbit.com/production/app.login.authenticate.1.css.173100ed61e66f07489aec914d487626.css" charset="utf-8"/>
+
+
+        
+        <script type="text/javascript" src="https://assets.fitbit.com/production/app.layouts.baseMarketing.7.js.8dfad62856ea88920e08ebeca0e5939b.js" charset="utf-8"></script>
+
+    
+    
+    
+        
+    </head>
+    
+
+    
+
+    
+        
+    
+
+    <body class="galileo   fb-body   droid  locale-en_IN"
+         data-user-id="" data-user-name="" data-date="" data-clock="24" data-height-system="" data-weight-system="" data-start-day-of-week="">
+    
+        
+
+
+
+
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T7WV22"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+{'gtm.start': new Date().getTime(),event:'gtm.js'}
+);var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T7WV22');</script>
+<!-- End Google Tag Manager -->
+
+
+    
+    
+
+    
+    <script type="text/javascript">
+    // Here are list of domains tracking by GA
+    if (typeof _ga_tracking_domains == "undefined") {
+        var _ga_tracking_domains = ['blog.fitbit.com', 'help.fitbit.com'];
     }
 </script>
-</body>
+    <a name="top"></a>
+    
+    
+    
+    
+
+    
+    
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+  
+    
+      
+      
+        
+      
+    
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+
+    
+    
+
+
+
+
+    
+    
+    
+    
+    
+    
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="wrapper-header ">
+    <div class="wrapper-header-inner  ">
+
+        
+        <a class="logo" href="http://www.fitbit.com/in/home" title="Go to homepage">
+        Fitbit
+        <span class="brand-cont"></span>
+    </a>
+
+    
+
+    <div class="hdr-menu fa dec-2016">
+
+        
+        
+            
+
+            
+                
+
+
+
+
+
+
+
+
+<ul class="hdr-menu-links">
+    <li class="hdr-prod hdr-plus">
+        <span class="hdr-menu-item">Products</span>
+        <ul>
+            <li class="hdr-prod-top hdr-prod-everyday">
+                <span><b>Everyday <br>Fitness</b></span>
+
+                <ul class="hdr-prod-product">
+                    <li>
+                        <a href="https://www.fitbit.com/zip">
+                            <img src="https://assets.fitbit.com/production/zip-2016.6ed226afd379baadc50d2aa7aa6438f7.png" />
+                            <span>Fitbit Zip®</span>
+                            
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.fitbit.com/one">
+                            <img src="https://assets.fitbit.com/production/one-2016.38719aba0d88ba6afa64b003a94e5c7f.png" />
+                            <span>Fitbit One®</span>
+                            
+                        </a>
+                    </li>
+
+                    
+                        
+                            <li>
+                                <a href="https://www.fitbit.com/flex2">
+                                    <img src="https://assets.fitbit.com/production/firmhandshake2048.9fab9c2ae02d248b59b2d3c2ca8c649f.png">
+                                    <span>Fitbit Flex 2™</span>
+                                    
+                                        <span class="hdr-prod-new">New</span>
+                                    
+                                </a>
+                            </li>
+                        
+                        
+                    
+
+                    
+                        <li>
+                            <a href="https://www.fitbit.com/alta">
+                                <img src="https://assets.fitbit.com/production/alta-2016.03e5db215e8243c5bc05f851fae367d7.png">
+
+                                <span>Fitbit Alta™</span>
+
+                                
+                            </a>
+                        </li>
+                    
+                </ul>
+            </li>
+
+            <li class="hdr-prod-top hdr-prod-active">
+                <span><b>Active <br>Fitness</b></span>
+
+                <ul class="hdr-prod-product">
+
+                    
+                        
+                            <li>
+                                <a href="https://www.fitbit.com/charge2">
+                                    <img src="https://assets.fitbit.com/production/larrybird9483.79f768d4a574100644f9a3101849a1ed.png">
+
+                                    <span>Fitbit Charge 2™</span>
+
+                                    
+                                        <span class="hdr-prod-new">New</span>
+                                    
+
+                                </a>
+                            </li>
+                        
+                        
+                    
+
+                    
+                        <li>
+                            <a href="https://www.fitbit.com/blaze">
+                                <img src="https://assets.fitbit.com/production/blaze-2016.7dc6488d4f03cbf22a5bb66e17e92028.png">
+
+                                <span>Fitbit Blaze™</span>
+
+                                
+
+                            </a>
+                        </li>
+                    
+                </ul>
+            </li>
+
+            <li class="hdr-prod-top hdr-prod-performance">
+                <span><b>Performance <br>Fitness</b></span>
+
+                <ul class="hdr-prod-product">
+                    
+                        <li>
+                            <a href="https://www.fitbit.com/surge">
+                                <img src="https://assets.fitbit.com/production/surge-2016.0fd2880053305928cdaf399527734bcf.png">
+
+                                <span>Fitbit Surge™</span>
+                                
+                            </a>
+                        </li>
+                    
+                </ul>
+
+            </li>
+
+            <li class="hdr-prod-top hdr-prod-scale">
+                <span><b>Wi-Fi <br>Smart Scale</b></span>
+
+                <ul class="hdr-prod-product">
+                    <li>
+                        <a href="https://www.fitbit.com/aria">
+                            <img src="https://assets.fitbit.com/production/aria-2016.1b776e96c6d658a167ad6bc097b1fda0.png">
+
+                            <span>Fitbit® Aria®</span>
+                            
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="hdr-prod-extras">
+                <ul>
+                    <li class="hdr-extra-accessories">
+                        <a href="https://www.fitbit.com/lookbook">
+                            <span>
+                                <b>FITBIT ACCESSORIES</b>
+                            </span>
+
+                            
+                                
+                                    <img class="accessories-2016" src="https://assets.fitbit.com/production/accessories-2016-alta.1144ec29f6ba94dd9026b7c127fb8fc2.png">
+                                
+
+                                
+
+                            
+                        </a>
+                    </li>
+
+                    <li class="hdr-extra-designer">
+                        <a href="https://www.fitbit.com/designer-collections">
+                            <img src="https://assets.fitbit.com/production/designer-collections.4d12f14196bff86195655633fbee0350.jpg">
+                            <span>
+                                
+                                    <h1>Designer</h1>
+                                    <h2>Collections</h2>
+                                
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <div class="hdr-prod-compare">
+                <span>Not sure which product is right for you?<a href="https://www.fitbit.com/compare"> FIND YOUR FIT</a></span>
+            </div>
+        </ul>
+    </li>
+
+    <li class="hdr-exps hdr-plus">
+        <span class="hdr-menu-item">Why Fitbit</span>
+        <ul>
+            <li><a href="https://www.fitbit.com/whyfitbit">Why Fitbit</a></li>
+            <li><a href="https://www.fitbit.com/whats-new">What's New</a></li>
+
+            
+                <li><a href="https://www.fitbit.com/technology">Our Technology</a></li>
+            
+
+            
+
+            <li><a href="https://www.fitbit.com/about">About Us</a></li>
+        </ul>
+    </li>
+
+    <li class="hdr-exps hdr-plus">
+        <span class="hdr-menu-item">Get Motivated</span>
+        <ul>
+            
+                <li><a href="https://www.fitbit.com/fitstar">Fitstar</a></li>
+            
+
+            
+
+            
+
+            
+
+            <li><a href="https://www.fitbit.com/fitbit-premium">Fitbit Premium</a></li>
+        </ul>
+    </li>
+
+    <li class="hdr-exps hdr-plus">
+        <span class="hdr-menu-item">App & Dashboard</span>
+        <ul>
+            <li><a href="https://www.fitbit.com/app">App Tour</a></li>
+            <li><a href="https://www.fitbit.com/challenges/adventures">Fitbit Challenges</a></li>
+            <li><a href="https://www.fitbit.com/partnership" target="_blank">Compatible Apps</a></li>
+        </ul>
+    </li>
+
+    <li class="hdr-exps hdr-plus">
+        <span class="hdr-menu-item">Help</span>
+        <ul>
+            <li><a href="
+http://help.fitbit.com
+" target="_blank">Product Help</a></li>
+            <li><a href="https://community.fitbit.com" target="_blank">Forums</a></li>
+            <li><a href="https://www.fitbit.com/product-care">Wear & Care</a></li>
+
+            
+                <li><a href="https://www.fitbit.com/how-to">How-To Videos</a></li>
+            
+        </ul>
+    </li>
+</ul>
+            
+
+            
+        
+
+
+
+
+
+                            
+
+                            
+                            
+                                <ul class="hdr-menu-actions">
+                                    
+                                        
+                                        <li class="hdr-menu-item hdr-store">
+                                            <a href="https://www.fitbit.com/store">
+                                                Store
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                    
+                                    <li class="hdr-login">
+                                        
+                                        <a class="hdr-menu-item" href="/login">
+                                            Log in
+                                        </a>
+                                    </li>
+                                    <li class="hdr-setup">
+                                        <a class="hdr-menu-item" href="https://www.fitbit.com/setup">
+                                            Setup
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            
+
+                        
+
+                    </div>
+
+                </div>
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+        
+        
+    
+
+    
+    <div id="container" class=" " >
+
+        
+        
+
+
+<nav id="sitenav" class="">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+        
+        
+        
+        
+        
+        
+        
+            <div class="noSubNav"></div>
+        
+    
+    
+
+</nav>
+
+        
+        
+    
+    
+    
+
+    
+
+    	<section class="wrapper common-form">
+    		<div id="fb-root"></div>
+
+    		
+
+    		<div id="wrapper-messages">
+	    		<div class="validation">
+		    		
+		                
+			            
+		                    
+		                    
+
+
+
+
+                            
+
+
+
+
+			            
+		            
+                    
+	            </div>
+
+	            <div class="notices">
+		    		
+	            </div>
+            </div>
+
+    		
+
+    		<div id="wrapper-signup" class="invisible">
+			    <div class="panel panel-signup">
+                        <h1 class="headline">
+                            Sign up
+                            <p class="subheadline">with a free account before getting a device</p>
+                        </h1>
+                        <div class="auth-choices clearfix fb-disabled">
+						<div class="column internal">
+							<form method="post" name="signup" action="https://www.fitbit.com/authenticate/signup" id="signupForm" class="validate-enabled failure form">
+								
+
+			                        <input name="subscriptionType" type="hidden" value="" />
+									<input name="signup" type="hidden" value="Create My Account" />
+									<input name="sessId" type="hidden" value="" />
+                                        
+			                        <input name="redirect" type="hidden" value="/oauth2/authorize?client_id=22849T&amp;redirect_uri=https%3A%2F%2Fwww.mywoohoo.io%2Fauth%2Ffitbit&amp;response_type=code&amp;scope=activity+heartrate+location+profile&amp;state=" />
+                                    <input name="switchToNonSecureOnRedirect" type="hidden" value="" />
+			                        <input name="includeWorkflow" type="hidden" value="" />
+			                        <input name="signupProcess" id="signupProcess" type="hidden" value="false" />
+                                    <input name="disableThirdPartyLogin" id="disableThirdPartyLogin" type="hidden" value="true" />
+
+									<fieldset>
+										<dl class="field-group">
+											<dd>
+												<input autocomplete="off" maxlength="255" tabindex="13" name="email" placeholder="Email" type="email" class="field email" />
+											</dd>
+											<dd>
+												<input autocomplete="off" tabindex="14" name="password" placeholder="Password" type="password" class="field password" />
+											</dd>
+                                            <dd class="legal">
+                                                <input tabindex="15" name="termsPrivacy" id="termsPrivacyConnected" type="checkbox" class="cb" value="true" />
+                                                <label for="termsPrivacyConnected">
+                                                    I agree to the Fitbit <a href="/in/terms" target="_blank">Terms of Service</a> and <a href="/in/privacy" target="_blank">Privacy Policy</a>.
+                                                </label>
+                                            </dd>
+											<dd class="data-transfer-terms hidden">
+												<input tabindex="15" name="termsUSTransfer" id="termsUSTransfer" type="checkbox" class="cb" value="true" />
+												<label for="termsUSTransfer">
+													I acknowledge that my personal data will be transferred to the United States, in accordance with the <a href="/in/privacy" target="_blank">Privacy Policy</a>
+												</label>
+											</dd>
+                                            <dd>
+                                                <input tabindex="15" name="emailSubscribe" checked="checked" id="emailSubscribeConnected" type="checkbox" class="cb" value="true" />
+                                                <label for="emailSubscribeConnected">
+                                                    Keep me updated about Fitbit products, news, and promotions.
+                                                </label>
+                                            </dd>
+										</dl>
+									</fieldset>
+									<div class="submit">
+										<button type="submit" class="common-btn common-btn-submit wide track-Auth-SignUp-ClickFitbit" tabindex="16">
+											Continue
+										</button>
+									</div>
+								
+							<div style="display: none;"><input type="hidden" name="_sourcePage" value="12H7MGMEkJstjmys_5hp0898Xv0u2Av3ZycVS5f-0EWGXNI4VIQxNV74ZIOPM8JeBQ8e1y4zf8fnWvO2rc8e1aZ7K8ElOlL-k8otg9Lb5R2YFjO5OWfGgg==" /><input type="hidden" name="__fp" value="-paqQw2n7AoWZw7qVcS_BXyhuVPGAMZHiHfP0atJZsRsdhyS41MZqOfTINpT02BalohHJBdaWuLTxhWr68fnCLLYIzRVHQyVJV-K0pe1Rk__xxDAU1l5ag==" /></div></form>
+						</div>
+						
+					</div>
+				</div>
+				<div class="panel panel-swap">
+					
+						Already a member? <a class="swap track-Auth-SignUp-ClickLogin" href="/login" data-swap="wrapper-login" tabindex="17">Log in now</a>
+					
+				</div>
+			</div>
+
+			
+
+			<div id="wrapper-login">
+				<div class="panel panel-login">
+				    
+				        
+				        
+				            <h1 class="headline">
+                                Log in
+                            </h1>
+				        
+				    
+					<div class="auth-choices clearfix">
+                        
+						<div class="internal">
+							<form method="post" name="login" action="https://www.fitbit.com/login" id="loginForm" class="validate-enabled failure form">
+		                        
+                                    
+                                        
+                                        
+                                            <input name="login" type="hidden" value="Log In" />
+                                        
+                                    
+
+                                    <input name="includeWorkflow" type="hidden" value="" />
+		                            <input name="redirect" id="loginRedirect" type="hidden" value="/oauth2/authorize?client_id=22849T&amp;redirect_uri=https%3A%2F%2Fwww.mywoohoo.io%2Fauth%2Ffitbit&amp;response_type=code&amp;scope=activity+heartrate+location+profile&amp;state=" />
+                                    <input name="switchToNonSecureOnRedirect" type="hidden" value="" />
+
+		                            
+                                    
+	                                
+	                                
+                                    
+                                    
+                                    <input name="disableThirdPartyLogin" id="disableThirdPartyLogin" type="hidden" value="true" />
+		                        	<fieldset>
+										<dl class="field-group">
+											<dd>
+												<input tabindex="23" name="email" placeholder="Email" type="email" class="field email" />
+											</dd>
+											<dd>
+												<input tabindex="24" name="password" placeholder="Password" type="password" class="field password" />
+											</dd>
+											
+												<dd class="options clearfix">
+													<a class="forgot" href="/login/forgotPassword" tabindex="26">Forgot password?</a>
+					                                <input tabindex="25" name="rememberMe" checked="checked" id="rememberMe" type="checkbox" class="cb" value="true" />
+					                                <label for="rememberMe">Remember Me</label>
+												</dd>
+											
+										</dl>
+									</fieldset>
+									<div class="submit">
+										<button type="submit" class="common-btn common-btn-submit track-Auth-Login-ClickFitbit" tabindex="27">
+											Log In
+										</button>
+									</div>
+		                        
+		                    <div style="display: none;"><input type="hidden" name="_sourcePage" value="6TiJlKbjmsZKYRrfqOfMoFhiDzCqtBeKdWrzcM3R4uNBlLqb2ohg7F9a2d91wX2MfD--DacN4_R1LHbGb5YnbmeqqqLbuydF7MexcPWtoP_1ujNVeZH3PQ==" /><input type="hidden" name="__fp" value="8ADIqp-MQsGMEVDeI3N-T6NiKxl2c2eG8HdIk6vRSo4PVQXtW-71YBQ-OKvIgwD4bQhHgS9XjQM=" /></div></form>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-swap">
+					
+						Want to try out Fitbit before getting a device? Sign up for a <a class="swap track-Auth-Login-ClickGetFree" href="/signup" data-swap="wrapper-signup" tabindex="28">free account</a>
+					
+				</div>
+			</div>
+
+			
+
+		
+
+			<div id="wrapper-create-password" class="invisible">
+				<div class="panel panel-create-password">
+					<h1 class="headline">
+						Create a Password
+					</h1>
+					<div class="fb-user-info constrain clearfix">
+						
+                			
+							
+								<img class="photo" id="external-data-photo-display" src="/images/common/fb_loading.gif"/>
+							
+            			
+
+						<h3 class="greeting">
+                            Hi, <span id="external-data-name-display"></span>
+						</h3>
+						<span class="confirmation" id="connect-confirmation-google"  style="display: none;">
+                            Google account connected
+						</span>
+						<span class="confirmation" id="connect-confirmation-facebook"  style="display: none;">
+                            Facebook account connected
+						</span>
+
+					</div>
+					<div class="create-password constrain">
+						<form method="post" action="https://www.fitbit.com/authenticate/signup" id="signupFormComplete" class="form">
+                            
+
+	                            <input name="subscriptionType" type="hidden" value="" />
+	                            <input name="signup" type="hidden" value="Create My Account" />
+                            	<input name="sessId" type="hidden" value="" />
+	                            <input name="timezone" type="hidden" value="" />
+	                            <input name="completeAccount" id="completeAccount" type="hidden" value="" />
+	                            <input name="redirect" id="signupRedirect" type="hidden" value="/oauth2/authorize?client_id=22849T&amp;redirect_uri=https%3A%2F%2Fwww.mywoohoo.io%2Fauth%2Ffitbit&amp;response_type=code&amp;scope=activity+heartrate+location+profile&amp;state=" />
+                                <input name="switchToNonSecureOnRedirect" type="hidden" value="" />
+	                            <input name="includeWorkflow" type="hidden" value="" />
+	                            
+                                <input name="disableThirdPartyLogin" id="disableThirdPartyLogin" type="hidden" value="true" />
+
+	                            <fieldset>
+									<dl class="field-group">
+										<dd>
+											<input name="email" id="external-data-email" placeholder="Email" type="email" class="field email" />
+										</dd>
+										<dd>
+											<input name="password" placeholder="Password" type="password" class="field password" />
+										</dd>
+                                        <dd>
+                                            <input name="emailSubscribe" checked="checked" id="emailSubscribeConnected" type="checkbox" class="cb" value="true" />
+                                            <label for="emailSubscribeConnected">
+                                                Keep me updated about Fitbit products, news, and promotions.
+                                            </label>
+                                        </dd>
+                                        <dd>
+                                            <input name="termsPrivacy" id="termsPrivacyConnected" type="checkbox" class="cb" value="true" />
+                                            <label for="termsPrivacyConnected">
+                                                I agree to the Fitbit <a href="/in/terms" target="_blank">Terms of Service</a> and <a href="/in/privacy" target="_blank">Privacy Policy</a>.
+                                            </label>
+                                        </dd>
+										<dd class="data-transfer-terms hidden">
+											<input tabindex="15" name="termsUSTransfer" id="termsUSTransfer" type="checkbox" class="cb" value="true" />
+											<label for="termsUSTransfer">
+												I acknowledge that my personal data will be transferred to the United States, in accordance with the <a href="/in/privacy" target="_blank">Privacy Policy</a>
+											</label>
+										</dd>
+									</dl>
+								</fieldset>
+								<div class="submit">
+									<button type="submit" class="common-btn common-btn-submit track-Auth-CompleteAcct1-ClickToProfile">
+										Create Account
+									</button>
+								</div>
+
+                            
+                        <div style="display: none;"><input type="hidden" name="_sourcePage" value="cfNs4Uv1F4uRcu5iaSOfYV73MdHVpVF3sj19PlsFNbuYny9TjBkXZTDOU64twHnewJABkWF9Mk_UljJU7sICRlnWtgC-hM5SMkiuTQl2gVnKca91Gv7ojQ==" /><input type="hidden" name="__fp" value="hYI8aLaodgSM_EPTQxa5XGW1ewxVJCAgocxOl6dT2RHhJ6s7B3IhQAOUzgqAGEYvmHH71kQBQQxBm14hhUUVQDk04b62619Zw0IdfM5eJgHTAEUuDmzn4Q==" /></div></form>
+					</div>
+				</div>
+
+				<div class="panel panel-swap">
+					<b>Already</b> a member?
+					<a class="swap track-Auth-CompleteAcct1-ClickLogin" href="/login" data-swap="wrapper-login">
+						Log in now
+					</a>
+				</div>
+
+			</div>
+
+	    </section>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!--[if lte IE 7]>
+    <style type="text/css">
+    .panel-profile .info-personal {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    }
+    .panel-profile .info-personal dd {
+    display: inline;
+    }
+    .panel-profile .info-personal .field {
+    width: 200px;
+    }
+    .panel-profile .info-personal .field-group {
+    width: 100%;
+    }
+    </style>
+    <![endif]-->
+
+
+
+
+
+
+    
+        
+        
+            
+                
+            
+            
+                
+            
+            
+                
+            
+            
+                
+            
+        
+        
+            
+            
+        
+    
+
+
+
+
+<section class="wrapper profile common-form">
+
+
+        
+
+    <div class="panel panel-profile">
+
+        <h1 class="headline">
+            Tell Us About Yourself
+        </h1>
+
+        <p class="explain">
+            We use this information to improve accuracy.
+        </p>
+
+        <form method="post" autocomplete="off" name="completeProfile" action="https://www.fitbit.com/user/profile/complete" id="completeProfile" class="form">
+            <input name="_eventName" type="hidden" value="signupAndCompleteProfile" />
+            <input name="redirect" type="hidden" value="/oauth2/authorize?client_id=22849T&amp;redirect_uri=https%3A%2F%2Fwww.mywoohoo.io%2Fauth%2Ffitbit&amp;response_type=code&amp;scope=activity+heartrate+location+profile&amp;state=" />
+
+            
+                <fieldset class="info-personal">
+                    <dl class="field-group">
+                        <dd>
+                            
+                            <label class="field-label">
+                                Name
+                            </label>
+                            <input autocomplete="off" tabindex="1" name="fullname" id="fullname" placeholder="Name" type="text" class="field name" />
+                        </dd>
+                    </dl>
+                    <div class="clear"></div>
+                </fieldset>
+                <fieldset class="info-body">
+                    <dl class="field-group">
+                        <dd class="gender left-cell">
+                            <label class="field-label">
+                                Gender
+                            </label>
+                            
+                                <div class="dropdown-wrapper">
+                                    <select tabindex="2" name="gender" id="gender" class="ui-ignore field">
+                                        <option value="NA">
+                                            Select
+                                        </option>
+                                        <option value="FEMALE">
+                                            Female
+                                        </option>
+                                        <option value="MALE">
+                                            Male
+                                        </option>
+                                    </select>
+                                    <span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span>
+                                </div>
+                            
+                        </dd>
+                        <dd class="birthday right-cell">
+                            
+                            
+                            
+                            <label class="field-label">
+                                Birthday
+                            </label>
+                            
+                            
+                                
+                                
+                                    <input data-validate-group="dob" autocomplete="off" maxlength="2" tabindex="3" name="birthDayOfMonth" placeholder="DD" type="text" class="field" />
+                                    <input data-validate-group="dob" autocomplete="off" maxlength="2" tabindex="4" name="birthMonth" placeholder="MM" type="text" class="field" />
+                                
+                            
+                            
+                                <input data-validate-group="dob" autocomplete="off" maxlength="4" tabindex="5" name="birthYear" placeholder="YYYY" type="text" class="field year" />
+                            
+                        </dd>
+                    </dl>
+                    <dl class="field-group">
+                        <dd class="height left-cell hasToggle">
+                            
+                            
+                            
+                            <label class="field-label">
+                                Height
+                            </label>
+                            
+                                <select name="heightSystem" id="heightSystem" class="toggle">
+                                    <option value="US">
+                                        Feet, Inches
+                                    </option>
+                                    <option value="METRIC" selected="selected">
+                                        Centimeters
+                                    </option>
+                                </select>
+                            
+                                
+                            <div id="height-group-us"
+                                 class="height-imperial invisible">
+                                <input autocomplete="off" max="9" maxlength="4" tabindex="6" type="number" min="1" name="heightFeet" step="1" disabled="disabled" id="heightFeet" placeholder="ft" class="field erasable" />
+                                <input autocomplete="off" max="11" maxlength="4" tabindex="7" type="number" min="0" name="heightInches" step="1" disabled="disabled" id="heightInches" placeholder="in" class="field erasable" />
+                            </div>
+                                
+                            <div id="height-group-metric"
+                                 class="height-metric">
+                                <input min="10" autocomplete="off" max="300" tabindex="6" name="heightCM" step="1" id="heightCM" placeholder="cm" type="number" class="field erasable" />
+                            </div>
+                        </dd>
+                        <dd class="weight right-cell hasToggle">
+                            
+                            
+                            
+                            <label class="field-label">
+                                Weight
+                            </label>
+                            
+                                <select name="weightSystem" id="weightSystem" class="toggle">
+                                    <option value="US">
+                                        Pounds
+                                    </option>
+                                    <option value="UK">
+                                        Stone
+                                    </option>
+                                    <option value="METRIC" selected="selected">
+                                        Kilograms
+                                    </option>
+                                </select>
+                            
+                                
+                            <div id="weight-group-US"
+                                 class="weight-group invisible">
+                                <input autocomplete="off" max="1500" maxlength="4" tabindex="8" type="number" min="44" name="lbs" step="1" disabled="disabled" id="field-weight-lbs" placeholder="lbs" class="field erasable" />
+                            </div>
+                                
+                            <div id="weight-group-UK"
+                                 class="weight-group invisible">
+                                <input min="3" autocomplete="off" max="106" tabindex="8" name="stone" disabled="disabled" id="field-weight-stone" placeholder="st" type="number" class="field erasable" />
+                                <input min="0" autocomplete="off" max="13" tabindex="9" name="stoneLbs" disabled="disabled" id="field-weight-stonelbs" placeholder="lbs" type="number" class="field erasable" />
+                            </div>
+                                
+                            <div id="weight-group-METRIC"
+                                 class="weight-group">
+                                <input autocomplete="off" max="680.4" maxlength="3" tabindex="8" type="number" min="20" name="kg" step="1" id="field-weight-kg" placeholder="kg" class="field erasable" />
+                            </div>
+                        </dd>
+                    </dl>
+                </fieldset>
+                <div class="submit">
+                    <button type="submit" id="complete-profile-submit" class="common-btn common-btn-submit track-Auth-CompleteAcct2-ClickComplete" tabindex="10">
+                        save profile
+                    </button>
+                </div>
+
+                <div class="validation">
+                    <ul class="errorList"></ul>
+                </div>
+            
+        <div style="display: none;"><input type="hidden" name="_sourcePage" value="f_hE5WnGMT7yfsWY1BmHOXSUaKES03f2AtcFfITm4EmKA8I0I-kEK3mRdAVJ09sFHNM1qV_xiP7CcIoXxBiotOesIftwSfw3aORU7FrxHTTZ6fNKwnXbBw==" /><input type="hidden" name="__fp" value="IPcWRXC1bZNesuP4MIArNED5ugwPooRcy8r38Duc3oe9AXW4R5bNS9a--ksn3VESuQPrATkWGjxzza0WrXfFoaV7gWCvccU82b2m7iXNjZk=" /></div></form>
+    </div>
+
+</section>
+
+
+
+
+    
+
+
+    </div>
+
+    
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="wrapper-footer" id="wrapper-footer">
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+            <div class="ftr-mail-me" success_message="Thanks for signing up!" error_message="Please enter an email address">
+                <span>Get the skinny on all things Fitbit</span>
+
+                <form method="post" action="https://cl.s7.exct.net/DEManager.aspx" novalidate>
+                    <input type="hidden" name="_successURL" value="http://www.fitbit.com">
+                    <input type="hidden" name="_errorURL" value="http://www.fitbit.com">
+                    <input type="hidden" name="_returnXML" value="0">
+                    <input type="hidden" name="_action" value="add">
+                    <input type="hidden" name="_clientID" value="7200675">
+                    <input type="hidden" name="_deExternalKey" value="202F45D6-CF67-4F10-ACE2-39A2ACC5D91F">
+                    <input type="hidden" name="notify_source" value="/login">
+                    <input type="hidden" name="locale" value="en_IN">
+                    <input type="hidden" name="notify_reason" value="footer">
+
+                    <input type="submit" style="display: none;">
+
+                    <div><input id="subscription_email" type="email" name="Email" placeholder="Enter your email address" value=""/><span class="arrow" onclick="javascript:;"></span>
+                    </div>
+                </form>
+            </div>
+            <script type="text/javascript" src="https://assets.fitbit.com/production/app.includes.footer.0.js.dc95f45b00bb146393d52aa889680609.js" charset="utf-8"></script>
+        
+        <div class="wrapper-footer-inner">
+            <div class="ftr-social">
+                
+                
+                    
+                    
+                        <ul>
+                            <li class="facebook">
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                         <a href="//www.facebook.com/FitbitIN"><i class="fitglyph fitglyph-facebook size-h"></i></a>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+                            </li>
+                            <li class="twitter">
+                                
+                                    
+                                        <a href="//twitter.com/fitbitIN"><i class="fitglyph fitglyph-twitter size-h"></i></a>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+                            </li>
+                            <li class="instagram">
+                                
+                                    
+                                    
+                                    
+                                    
+                                         <a href="//instagram.com/fitbitin/"><i class="fitglyph fitglyph-instagram  size-h"></i></a>
+                                    
+                                    
+                                    
+                                
+                            </li>
+                            <li class="pinterest"><a href="//www.pinterest.com/fitbit/"><i class="fitglyph fitglyph-pinterest  size-h"></i></a>
+                            </li>
+                            <li class="youtube">
+                                
+                                    
+                                    
+                                        <a href="//www.youtube.com/user/FitbitOfficialSite"><i class="fitglyph fitglyph-youtube  size-h"></i></a>
+                                    
+                                
+                            </li>
+                            <li class="google-plus"><a href="//plus.google.com/+fitbit"><i
+                                    class="fitglyph fitglyph-google-plus  size-h"></i></a></li>
+                            <li class="blog"><a href="//blog.fitbit.com/">BLOG</a></li>
+                        </ul>
+                    
+                
+            </div>
+            <div class="ftr-links">
+                <ul>
+                    <li><a href="https://www.fitbit.com/in/about">About Us</a></li>
+                    
+                    <li><a href="/careers">Careers</a></li>
+                    <li><a href="https://www.fitbit.com/in/retailers">Retailers</a></li>
+                    
+                        
+
+                    
+                        
+                        
+                            <li><a href="https://www.fitbit.com/in/fitbit-wellness">Fitbit Wellness</a></li>
+                        
+                    
+
+                    <li><a href="https://dev.fitbit.com/">API</a></li>
+                    <li><a href="
+http://help.fitbit.com
+">Help</a></li>
+                        
+                </ul>
+            </div>
+            <div class="ftr-locale-holder">
+                <div class="ftr-locale">
+                    
+                        <span class="globe-icon"></span>
+                        
+                            
+                            
+                                
+                                    India
+                                    (<a href="/countries">change</a>)
+                                
+                            
+                        
+                    
+                </div>
+            </div>
+            <div class="ftr-bottom">
+                <ul>
+                    <li class="copyright">
+                        &copy;2017 Fitbit, Inc. All rights reserved.
+                    </li>
+
+                    
+                    
+                        
+                     
+                        <li>
+                            <a href="https://www.fitbit.com/in/legal/privacy">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                              <a href="https://www.fitbit.com/in/terms">
+                                Terms of Service
+                            </a>
+                            
+                        </li>
+                        <li>
+                             <a href="https://www.fitbit.com/in/returns">
+                                Returns & Warranty
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="https://www.fitbit.com/in/productcare">
+                                Wear and Care
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.fitbit.com/in/forcesupport/info">
+                                Recall & Safety Info
+                            </a>
+                        </li>
+                        
+
+
+                    
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    
+
+    
+    
+
+    
+        
+        
+        
+        
+            <script type="text/javascript" src="https://assets.fitbit.com/production/app.layouts.baseMarketing.10.js.03c3209a550cd45bccdb54a673f3f4e0.js" charset="utf-8"></script>
+        
+    
+
+    
+        
+        
+            <script type="text/javascript" src="https://assets.fitbit.com/production/app.layouts.baseMarketing.12.js.d31bd1a6044cc4fd038942995360e687.js" charset="utf-8"></script>
+            
+                <script type="text/javascript">
+fitbit.i18n.setResource('com.fitbit.app.label.set', 'Set');
+fitbit.i18n.setResource('com.fitbit.app.label.view', 'View');
+fitbit.i18n.setResource('com.fitbit.app.label.free', 'FREE');
+fitbit.i18n.setResource('com.fitbit.app.label.in_google_play', 'In Google Play');
+fitbit.i18n.setResource('com.fitbit.app.label.download_on_google_play', 'Download on Google Play');
+fitbit.i18n.setResource('com.fitbit.app.label.select_date', 'Select a date');
+fitbit.i18n.setResource('com.fitbit.app.tracker.message.tracker_add_progress', 'Adding custom tracker...');
+fitbit.i18n.setResource('com.fitbit.app.tracker.label.add_tracker_button', 'Add Log');
+fitbit.i18n.setResource('com.fitbit.app.error.general_fatal_error', 'We are experiencing technical difficulties, please try again later.');
+fitbit.i18n.setResource('com.fitbit.app.error.errors_title', 'Please fix the following errors:');
+</script>
+            
+            
+                <script type="text/javascript">
+fitbit.i18n.setResource('com.fitbit.util.dateformat.datepicker_show_month_after_year', '');
+fitbit.i18n.setResource('com.fitbit.util.dateformat.datepicker_year_suffix', '');
+</script>
+            
+            <script type="text/javascript">
+if (fitbit.i18n != undefined) {fitbit.i18n.locale = 'en_IN';fitbit.i18n.DecimalNumber.decimalSeparator = '.';fitbit.i18n.DecimalNumber.groupSeparator = ',';fitbit.i18n.DecimalNumber.negativeSign = '-';fitbit.i18n.WEEKDAYS = ["Su","Mo","Tu","We","Th","Fr","Sa"];fitbit.i18n.MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December",""];}</script>
+        
+    
+
+    <script type="text/javascript" src="https://assets.fitbit.com/production/app.layouts.baseMarketing.16.js.55b31551433c1a97ba974c6aa77be040.js" charset="utf-8"></script>
+    
+        
+        
+    
+    
+        
+    
+
+    
+    <script>
+        if (typeof fitbit == undefined) fitbit = {};
+        fitbit.Handlebars = this.Handlebars;
+    </script>
+
+    
+    <script type="text/javascript">
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.just_now', 'just now');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.hours', '{0} hrs ago');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.last_month', 'last month');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.weeks', '{0} wks ago');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.months', '{0} months ago');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.week', '{0} wk ago');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.year', '{0} year ago');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.minutes', '{0} mins ago');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.years', '{0} years ago');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.minute', '{0} min ago');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.second', '{0} sec ago');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.yesterday', 'yesterday');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.seconds', '{0} secs ago');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.hour', '{0} hr ago');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.month', '{0} month ago');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.days', '{0} days ago');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.last_week', 'last week');
+fitbit.i18n.setResource('com.fitbit.util.relativedateutil.day', '{0} day ago');
+</script>
+
+    
+    <script type="text/javascript">
+fitbit.i18n.setResource('com.fitbit.app.modules.message.chars_remaining_primary_plural', '{0} characters remaining');
+fitbit.i18n.setResource('com.fitbit.app.modules.message.chars_remaining_primary_singular', '{0} character remaining');
+</script>
+
+    
+    
+        <script type="text/javascript">
+fitbit.i18n.setResource('com.fitbit.app.user.friends.label.search_placeholder_text', 'Start typing your friends name or select from below');
+fitbit.i18n.setResource('com.fitbit.app.user.friends.label.view_request', 'View Request');
+fitbit.i18n.setResource('com.fitbit.app.user.friends.label.reply', 'Reply');
+fitbit.i18n.setResource('com.fitbit.app.user.friends.label.send_message', 'Send Message');
+fitbit.i18n.setResource('com.fitbit.app.user.friends.label.friend_rankings', 'Friend Rankings');
+fitbit.i18n.setResource('com.fitbit.app.user.friends.label.badges', 'Badges');
+fitbit.i18n.setResource('com.fitbit.app.user.friends.label.loading_notifications', 'Loading...');
+fitbit.i18n.setResource('com.fitbit.app.user.friends.label.empty_state_notifications', 'You have no notifications.');
+</script>
+    
+
+
+    
+        <script type="text/javascript">
+            requirejs.config({
+                paths: {
+                    'com/fitbit': 'https://assets.fitbit.com/production/i18n',
+                    'core/com/fitbit': 'https://assets.fitbit.com/production/i18n'
+                }
+            });
+        </script>
+        <script type="text/javascript" src="https://assets.fitbit.com/production/fitbit-header.localization.en_IN.js.d5602ee992caaac698ca5cb97cce3cf5.js" charset="utf-8"></script>
+        <script type="text/javascript" src="https://assets.fitbit.com/production/fitbit-header.js.30c857d4cf0705094af70464f323f912.js" charset="utf-8"></script>
+        <script type="text/javascript" src="https://assets.fitbit.com/production/shared/scripts/modules/api-client.js.8938f7636b4bcdb38d68cbf908b70172.js" charset="utf-8"></script>
+        <script type="text/javascript" src="https://assets.fitbit.com/production/relationshipStatus.js.2138d63cc5357844b332130ba72b4542.js" charset="utf-8"></script>
+        <script type="text/javascript" src="https://assets.fitbit.com/production/nonfriendMessageModal.js.114140c634cb8f4fc9785f35277258e3.js" charset="utf-8"></script>
+        <script type="text/javascript" src="https://assets.fitbit.com/production/friendBlockedModal.js.3f49c3bef135f5a2aeb8fbbdc8ae5157.js" charset="utf-8"></script>
+        <script type="text/javascript" src="https://assets.fitbit.com/production/friendRequestModal.js.9c51388bc8cfa3a566373292789e6aa8.js" charset="utf-8"></script>
+    
+    <script>
+        require(["fitbit-header"]);
+        
+        if (fitbit.Handlebars) {
+            $.extend(true, this.Handlebars, fitbit.Handlebars);
+        }
+    </script>
+    
+    
+        <script type="text/javascript" src="https://assets.fitbit.com/production/switchLocale.js.6cfca1b2e7578b6ef92c5882a040b1fc.js" charset="utf-8"></script>
+    
+
+    
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="https://assets.fitbit.com/production/app.layouts.baseMarketing.14.js.ab22ec401e65167fd17ad74a7ca913f2.js" charset="utf-8"></script>
+        <![endif]-->
+    
+
+    
+    <script type="text/javascript">
+fitbit.i18n.setResource('com.fitbit.app.login.message.cookie_violation_msg', 'Your browser preference does not allow us to use HTTP cookie. Please enable it to allow us to log you in.');
+</script>
+    <script type="text/javascript">
+fitbit.i18n.setResource('com.fitbit.app.error.errors_title', 'Please fix the following errors:');
+</script>
+    <script type="text/javascript">
+fitbit.i18n.setResource('com.fitbit.app.user.profile.error.birthYear_invalid', 'Please provide a valid <em>birth year</em>.');
+fitbit.i18n.setResource('com.fitbit.app.user.profile.error.birthMonth_invalid', 'Please provide a valid <em>birth month</em>. Value for month must be in the range [1,12].');
+fitbit.i18n.setResource('com.fitbit.app.user.profile.error.birthDayOfMonth_invalid', 'Please provide a valid <em>day of month</em> for your birthday.');
+fitbit.i18n.setResource('com.fitbit.app.user.profile.error.birthDate_invalid', 'Please provide a valid <em>birth date</em>.');
+fitbit.i18n.setResource('com.fitbit.app.user.profile.error.birthDate_tooEarly_invalid', 'Please provide a valid <em>birth date</em>. Not likely that you are older than the oldest living person known.');
+fitbit.i18n.setResource('com.fitbit.app.user.profile.error.birthDate_atLeast13_invalid', '(Code #541) You are ineligible for an account on Fitbit.');
+fitbit.i18n.setResource('com.fitbit.app.user.profile.error.fullname_invalid', 'Please provide a valid <em>name</em>');
+fitbit.i18n.setResource('com.fitbit.app.user.profile.error.gender_invalid', 'Please provide valid gender.');
+fitbit.i18n.setResource('com.fitbit.app.user.profile.error.heightFeet_invalid', 'Please provide valid <em>feet</em> for you height.');
+fitbit.i18n.setResource('com.fitbit.app.user.profile.error.heightInches_invalid', 'Please provide valid <em>inches</em> for your height.');
+fitbit.i18n.setResource('com.fitbit.app.user.profile.error.heightCM_invalid', 'Please provide a valid height.');
+fitbit.i18n.setResource('com.fitbit.app.user.profile.error.lbs_invalid', 'Please provide a valid weight.');
+fitbit.i18n.setResource('com.fitbit.app.user.profile.error.stone_invalid', 'Please provide valid <em>stone</em> for your weight.');
+fitbit.i18n.setResource('com.fitbit.app.user.profile.error.stoneLbs_invalid', 'Please provide valid <em>pounds</em> for your weight.');
+fitbit.i18n.setResource('com.fitbit.app.user.profile.error.kg_invalid', 'Please provide a valid weight.');
+</script>
+
+    
+    <script type="text/javascript">
+        window.facebookAppId = "106920676011663";
+    </script>
+
+    <script type="text/javascript" src="https://assets.fitbit.com/production/app.login.authenticate.2.js.b9857a03c0492e16d2b20541cc83410f.js" charset="utf-8"></script>
+
+    
+    
+      
+      
+      
+    
+    <!-- End of Google Website Optimizer Tracking Script -->
+
+
+        
+
+        <script type="text/javascript">
+            (function($){
+                $('.fb-modal-opener').click(function() {
+                        var $content = $(this.hash);
+                        $content[0].style.width = '';
+                        $content.dialog({
+                            width: $content.width() || 560,
+                            modal: true,
+                            draggable: false,
+                            resizable: false,
+                            dialogClass: 'fb-modal-dialog',
+                            open: function() {
+                                var popup = $(this);
+                                $('.ui-widget-overlay').click(function() {
+                                    popup.dialog('close');
+                                });
+                            }
+                        });
+                        return false;
+                    });
+            })(jQuery);
+
+
+            $(function(){
+                var target = $("#profileDropdownTarget"), dd = $("#profileDropdown"), hideTimer;
+                if (target.length) {
+                    var off = target.offset();
+                    dd.appendTo($("body")).css({left: (off.left + 10) + "px", top: (off.top + 20) + "px"});;
+
+                    var show = function(){ hideTimer && clearTimeout(hideTimer); dd.show(); };
+                    var hide = function(){ hideTimer && clearTimeout(hideTimer); hideTimer = setTimeout(function(){ dd.hide(); }, 200); };
+                    target.hover(show, hide);
+                    dd.hover(show, function(ev){ if(ev.relatedTarget !== target[0]) hide(); });
+                }
+            });
+        </script>
+
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+(function() {
+    if(window.fitbit){
+        fitbit.namespace("fitbit.app.googleAnalytics");
+    }else{
+        window.fitbit={app:{}}
+    }
+
+
+    fitbit.app.googleAnalytics = {
+        deferredCookieName : "gaDeferred",
+        eventParamDelimiter : ",",
+
+        getEnvironment: function(host) {
+            if (host.indexOf("local") == 0) {
+                return "dev";
+            } else if (host.indexOf("qa3") == 0) {
+                return "qa3";
+            } else if (host.indexOf("qa2") == 0) {
+                return "qa2";
+            } else if (host.indexOf("qa1") == 0) {
+                return "qa1";
+            } else {
+                return "prod"
+            }
+        },
+
+        deferredTracking: function() {
+            var deferredCookieName = fitbit.app.googleAnalytics.deferredCookieName;
+            var eventsData = fitbit.app.googleAnalytics.parseGAData(deferredCookieName);
+            if(eventsData != null) {
+                for (trackEventName in eventsData) {
+                    try {
+                        var trackEventString = eventsData[trackEventName];
+                        var trackEventData = trackEventString.split( fitbit.app.googleAnalytics.eventParamDelimiter );
+                        //log event
+                        _gaq.push([ "_trackEvent" , trackEventData[0] , trackEventData[1] , trackEventData[2] ]);
+                    } catch(e) {
+
+                    }
+                }
+                var expires = new Date();
+                document.cookie = fitbit.app.googleAnalytics.deferredCookieName + "=" + "; expires=" +
+                        expires.toGMTString() + "; path=/";
+            }
+        },
+
+        parseGAData: function( cookieName ) {
+            var cookiesString = document.cookie;
+            if (cookiesString) {
+                var searchPart = fitbit.app.googleAnalytics.deferredCookieName + "=";
+                var gaCookieStartIndex = cookiesString.indexOf(searchPart);
+                var table = null;
+                while (gaCookieStartIndex != -1) {
+                    var gaCookieEndIndex = cookiesString.indexOf(";",gaCookieStartIndex);
+                    var gaCookieString = null;
+                    if (gaCookieEndIndex != -1) {
+                        gaCookieString = cookiesString.substring(gaCookieStartIndex,gaCookieEndIndex);
+                    } else {
+                        gaCookieString = cookiesString.substring(gaCookieStartIndex);
+                        gaCookieEndIndex = gaCookieStartIndex + gaCookieString.length;
+                    }
+                    if (gaCookieStartIndex + searchPart.length < gaCookieEndIndex) {
+                        //get actual query string
+                        var query = gaCookieString.substring(searchPart.length);
+                        var parsed = fitbit.app.googleAnalytics.parseCookiePart(query);
+                        if (table == null) {
+                            table = parsed;
+                        } else if(parsed != null) {
+                            for (property in parsed) {
+                                table[property] = parsed[property];
+                            }
+                        }
+                    }
+                    gaCookieStartIndex = cookiesString.indexOf(searchPart,gaCookieEndIndex);
+                }
+                //remove cookie
+                return table;
+            }
+            return null;
+        },
+
+        parseCookiePart: function( query ) {
+            var queryParts = decodeURIComponent(query).split("&");
+            var queryPart  = null;
+            if (queryParts.length > 0) {
+                var table = new Object();
+                for (var i = 0 , len = queryParts.length; i < len; i++) {
+                    queryPart = queryParts[i].split("=");
+                    table[decodeURIComponent(queryPart[0])] = decodeURIComponent(queryPart[1]);
+                }
+                return table;
+            }
+            return null;
+        }
+    };
+
+    /* acct is GA account number, i.e. "UA-5555555-1" */
+    function gaSSDSLoad(acct) {
+        if (!window._gaq) {
+            window._gaq = [];
+        }
+        var _gaq = window._gaq;
+        _gaq.push(['_setAccount', acct]);
+        if(document.domain) {
+            _gaq.push(['_setDomainName', document.domain]);
+        }
+        _gaq.push(['_setAllowLinker', true]);
+
+        _gaq.push(['_setCustomVar', 1, "visitorType", "notloggedin", 1]);
+        _gaq.push(['_setCustomVar', 2, "country", "en_IN", 1]);
+        
+
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        var pageURI = window.location.pathname;
+
+        
+        
+        
+        _gaq.push(['_trackPageview', '/i-n'+pageURI]);
+        
+        
+        
+        
+
+        
+
+        
+        
+
+        if(!window.thirdPartyTrackingDisabled) {
+            //async loading of GA code
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            var script = document.createElement('script');
+            script.src = gaJsHost + 'google-analytics.com/ga.js';
+            script.type = 'text/javascript';
+            script.async = true;
+            script.onloadDone = false;
+            script.onload = function () {
+                script.onloadDone = true;
+                fitbit.app.googleAnalytics.deferredTracking();
+            };
+            script.onreadystatechange = function() {
+                if (('loaded' === script.readyState || 'complete' === script.readyState) && !script.onloadDone) {
+                    script.onloadDone = true;
+                    fitbit.app.googleAnalytics.deferredTracking();
+                }
+            };
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+    }
+
+    var host = document.location.host;
+    var env = fitbit.app.googleAnalytics.getEnvironment(host);
+    if (env === "qa1") {
+        gaSSDSLoad("UA-42232151-2");
+    } else if (env === "qa2") {
+        gaSSDSLoad("UA-42232151-3");
+    } else if (env === "qa3") {
+        gaSSDSLoad("UA-42232151-1");
+    } else if (env === "dev") {
+        gaSSDSLoad("UA-42232151-1");
+    } else if (env === "prod") {
+        gaSSDSLoad("UA-2595270-1");
+    } else {
+        console.log("Could not initialize GA account for given host: "+host);
+    }
+})();
+</script>
+
+
+    
+        <script type="text/javascript" src="https://assets.fitbit.com/production/app.includes.mixPanel.0.js.eed8128f20056c617893ffafc8285b1b.js" charset="utf-8"></script><script type="text/javascript" src="https://assets.fitbit.com/production/app.includes.mixPanel.1.js.0d07427d2149cc7595e6ae807e2a816c.js" charset="utf-8"></script><script type="text/javascript">
+
+
+if (window.thirdPartyTrackingDisabled) {
+    window.mixpanel = [];
+    window.mixpanel.init = function () {
+    };
+    window.mixpanel.track = function () {
+    };
+} else {
+
+    // clear out the large MP cookie so new smaller size cookie is put in
+    document.cookie = 'mp_mp_cookie=;expires=-1;path=/';
+
+    (function (c, a) {
+        window.mixpanel = a;
+        var b, d, h, e;
+        b = c.createElement("script");
+        b.type = "text/javascript";
+        b.async = !0;
+        b.src = ("https:" === c.location.protocol ? "https:" : "http:") +
+                '//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';
+        d = c.getElementsByTagName("script")[0];
+        d.parentNode.insertBefore(b, d);
+        a._i = [];
+        a.init = function (b, c, f) {
+            function d(a, b) {
+                var c = b.split(".");
+                2 == c.length && (a = a[c[0]], b = c[1]);
+                a[b] = function () {
+                    a.push([b].concat(
+                            Array.prototype.slice.call(arguments, 0)))
+                }
+            }
+
+            var g = a;
+            "undefined" !== typeof f ? g = a[f] = [] :
+                    f = "mixpanel";
+            g.people = g.people || [];
+            h = ['disable', 'track', 'track_pageview', 'track_links',
+                'track_forms', 'register', 'register_once', 'unregister', 'identify', 'alias', 'name_tag',
+                'set_config', 'people.set', 'people.increment', 'people.track_charge', 'people.append'];
+            for (e = 0; e < h.length; e++)d(g, h[e]);
+            a._i.push([b, c, f])
+        };
+        a.__SV = 1.2;
+    })(document, window.mixpanel || []);
+}
+
+
+
+var mpqMasterPrj = "82d19845b298fcc8b8713861c9cf67c0";
+var mpqSignupPrj = "6d8c58bf820d35c347bf4c80b85dfa87";
+var mpqDashboardPrj = "f1d7f147cdb73c164d5e1e29f7cda229";
+var mpqOrderPrj = "c3eb4cb5809febf58e295eecc018cede";
+var mpqBadgesPrj = "fb8136a98d2f93dd1602e7c18ebada3e";
+var mpqDevicesPrj = "36a318763296893f99f0328620b31720";
+var mpqWebsitePrj = "0c603dde37e11848bf8ba55a855f9d1a";
+var mpqSocialFeaturesPrj = "c7ba2a7fc10a15f9eb140af80c730653";
+var mpqCWPrj = "2a509160f60d33578a765e88afebee24";
+var mpqSfsPrj = "6d8c58bf820d35c347bf4c80b85dfa87";
+
+Mixpanel.getMixpanelConfig = function (namespace, trackPageView) {
+    return {
+        cookie_name: "mp_cookie",
+        cross_subdomain_cookie: false,
+        track_links_timeout: 500,
+        upgrade: true,
+        track_pageview: trackPageView,
+//        debug:true,
+        loaded: function(){
+            
+        }
+    };
+};
+
+var mpq = new Mixpanel.Manager({
+    'default': mpqMasterPrj,
+    projects: [
+        {
+            token: mpqWebsitePrj,
+            config: Mixpanel.getMixpanelConfig()
+        },
+        {
+            token: mpqSignupPrj,
+            config: Mixpanel.getMixpanelConfig('signup', false),
+            namespace: 'signup'
+        },
+        {
+            token: mpqDashboardPrj,
+            config: Mixpanel.getMixpanelConfig('dashboard', false),
+            namespace: 'dashboard'
+        },
+        {
+            token: mpqOrderPrj,
+            config: Mixpanel.getMixpanelConfig('order', false),
+            namespace: 'order'
+        },
+        {
+            token: mpqBadgesPrj,
+            config: Mixpanel.getMixpanelConfig('badges', false),
+            namespace: 'badges'
+        },
+        {
+            token: mpqDevicesPrj,
+            config: Mixpanel.getMixpanelConfig('devices', false),
+            namespace: 'devices'
+        },
+        {
+            token: mpqSocialFeaturesPrj,
+            config: Mixpanel.getMixpanelConfig('social', false),
+            namespace: 'social'
+        },
+        {
+            token: mpqCWPrj,
+            config: Mixpanel.getMixpanelConfig('corporatewellness', false),
+            namespace: 'corporatewellness'
+        },
+        {
+            token: mpqSfsPrj,
+            config: Mixpanel.getMixpanelConfig('sfs', false),
+            namespace: 'sfs'
+        }
+    ]
+});
+
+
+(function() {
+    for (var p in mpq.projects) {
+        if (mpq.projects.hasOwnProperty(p)) {
+            mpq.projects[p].push(["register", {"Locale": "IN"}, "all", 90]);
+        }
+    }
+})();
+
+
+(function () {
+    mpq.registerProject({
+        token: mpqMasterPrj,
+        config: Mixpanel.getMixpanelConfig('master', false),
+        namespace: 'master'
+    });
+
+    var props = {"Logged In":false,"Environment":"prod"};
+    var userAgent = new UAParser(),
+            os = userAgent.getOS(),
+            osVersion = [os.name, os.version].join(' ');
+
+    props['Platform'] = 'Web';
+    props['Locale'] = 'en_IN';
+    props['Operating System Version'] = osVersion;
+
+    mpq.getProject(mpqMasterPrj).push(['register', props]);
+})();
+
+fitbit.loadInlineScript(function () {
+
+    
+    $(function () {
+        
+        mpq.push(["track_links",
+            "a#mpq-link-cart-Header",
+            "OrderCart: Start",
+            {
+                "!SOURCE": "Header",
+                "!PAGE": document.location.pathname,
+                "token": mpqMasterPrj
+            }
+        ]);
+        mpq.push(["track_links",
+            "a#mpq-link-cart-Footer",
+            "OrderCart: Start",
+            {
+                "!SOURCE": "Footer",
+                "!PAGE": document.location.pathname,
+                "token": mpqMasterPrj
+            }
+        ]);
+        mpq.push(["track_links",
+            "li.mpq-link-cart-MainMenu a",
+            "OrderCart: Start",
+            {
+                "!SOURCE": "Main Menu",
+                "!PAGE": document.location.pathname,
+                "token": mpqMasterPrj
+            }
+        ]);
+
+        
+
+
+        mpq.push(["track_forms", ".cart_form", "OrderCart: Next", function () {
+            var source = "Payment Form";
+
+            if ($('ul.errorList li').size()) {
+                source += " - Errors"
+            }
+            return {
+                "!SOURCE": source,
+                "!PAGE": document.location.pathname,
+                "token": mpqMasterPrj
+            };
+        }]);
+
+
+        $("#you_might_like .add").click(function () {
+
+            // TODO: should thie be in mixPanelCart.jsp?
+            var promoCode = $(".empty_cart").eq(0).attr("data-promo-code") || undefined;
+            var hasPromo = "NO";
+            if (undefined != promoCode) {
+                hasPromo = "YES";
+            }
+            console.debug("Added " + $(this).attr('data-product-id') + " with code " + hasPromo);
+            mpq.push(["track",
+                "OrderCart:  xSell Click",
+                {
+                    "!PRODUCT": $(this).attr('data-product-id'),
+                    "!PROMOCART": hasPromo,
+                    "!PAGE": document.location.pathname,
+                    "token": mpqMasterPrj
+                }
+            ]);
+        });
+
+        $(".orderSummary").find("input[type=submit].right").click(function () {
+            mpq.push(["track",
+                "OrderCart: PlaceOrder",
+                {
+                    "!SOURCE": "Order Confirmation Form",
+                    "!PAGE": document.location.pathname,
+                    "token": mpqMasterPrj
+                }
+            ]);
+        });
+
+        
+        $('.hdr-login').on('click', function () {
+            mpq.push(['track',
+                'User: Login',
+                {
+                    "!PAGE": document.location.pathname,
+                    "token": mpqMasterPrj
+                }
+            ]);
+        });
+
+        $('.hdr-setup').on('click', function () {
+            mpq.push(["track",
+                'User: Setup',
+                {
+                    "!PAGE": document.location.pathname,
+                    "token": mpqMasterPrj
+                }
+            ]);
+        });
+        
+        $("a#mpq-link-cart-Login").on("click", function () {
+            mpq.push(["track",
+                "OrderCart: Start",
+                {
+                    "!SOURCE": "Login and SignUp",
+                    "!PAGE": document.location.pathname,
+                    "token": mpqMasterPrj
+                }
+            ]);
+        });
+        
+
+    });
+    
+});
+</script>
+
+    
+    
+
+
+
+
+
+
+<div id="sf_fl_content"></div>
+
+
+    
+    
+        
+        
+    
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://assets.fitbit.com/production/app.includes.thirdPartyTracking.0.js.40c25c0a06b5278187addcf70f5a888f.js" charset="utf-8"></script>
+
+    
+    <script type="text/javascript" src="https://assets.fitbit.com/production/app.includes.thirdPartyTracking.1.js.ba271d120680a1a38e38167d587352d4.js" charset="utf-8"></script>
+
+    
+        <script>
+            /* <![CDATA[ */
+            // this is the US conversion id
+            var google_conversion_id = 982784463;
+            var google_conversion_language = "en";
+            var google_conversion_format = "3";
+            var google_conversion_color = "666666";
+            var google_conversion_label = "k4sECL72rgIQ0vWl6gM";
+            var google_conversion_value = 0;
+            /* ]]> */
+        </script>
+        <script src="https://www.googleadservices.com/pagead/conversion.js"></script>
+        <noscript>
+            <div style="display:inline;">
+                <img height="1" width="1" style="border-style:none;" alt="" src="https://www.googleadservices.com/pagead/conversion/982784463/?label=k4sECL72rgIQ0vWl6gM&amp;guid=ON&amp;script=0"/>
+            </div>
+        </noscript>
+    
+
+    
+
+    <!-- Header Mixpanel Tracking -->
+    
+
+    <!-- Miaozhen Basic Tracking -->
+    
+
+
+
+        
+        
+        
+
+
+
+
+
+    
+
+
+<!--[if lte IE 9]>
+	<script type="text/javascript" src="https://assets.fitbit.com/production/app.includes.polyfills.0.js.9700d06c2d8cff86ecc8b158a663c8c1.js" charset="utf-8"></script>
+<![endif]-->
+
+        
+            
+                
+                
+            
+            
+        
+
+        
+        
+
+        <!-- Accept-Language: null;
+ locationService.getCountry: IN;
+ beanContext.getLocale(): en_IN;
+ localizationService.getLocale(request): en_IN;
+ localizationService.getLocale(viewer, request): en_IN -->
+         
+
+
+        
+        <script type="text/javascript">
+            // check to see if nav timing is supported by the web browser
+            if (('performance' in window) && ('timing' in window.performance) && ('navigation' in window.performance)) {
+
+                window.onload = function () {
+
+                    setTimeout(function () {
+                        var performance = window.performance;
+                        var t = performance.timing;
+                        var mpq = window.mpq;
+                        var navTimingObj = {
+                            '!REDIRECT_TIME':           t.redirectEnd - t.redirectStart, // Time consumed preparing the new page
+                            '!DNS_TIME':                t.domainLookupEnd - t.domainLookupStart, // DNS query time
+                            '!TCP_TIME':                t.connectEnd - t.connectStart, // TCP connection time
+                            '!DOM_TREE_COMPLETE':       t.domComplete - t.domInteractive, // Time spent constructing the DOM tree
+                            '!DOM_INTERACTIVE':         t.domInteractive - t.responseEnd, // Request to completion of the DOM loading
+                            '!REQUEST_TIME':            t.responseEnd - t.requestStart, // Time spent during the request
+                            '!LOAD_EVENT_TIME':         t.loadEventEnd - t.loadEventStart, // Load event time
+                            '!TOTAL_LOAD_TIME':         t.loadEventEnd - t.fetchStart // Total time from start to load
+                        };
+
+                        if (mpq) {
+                            mpq.push(["track", "Perf: Nav Timing Full", $.extend({
+                                'token':                window.mpqMasterPrj,
+                                '!PACKTAG_DISABLED':    'false',
+                                '!HOSTNAME':            window.location.hostname
+                            }, navTimingObj)]);
+                        }
+
+                    }, 0);
+                }
+
+            }
+
+        </script>
+
+    </body>
 </html>
+
