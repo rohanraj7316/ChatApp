@@ -9,18 +9,8 @@ var UserSchema = new Schema({
 });
 UserSchema.pre('save',function(next){
     var user = this;
-   /* var salt;
-    bcrypt.genSalt(10,function(err,result){
-        if(err) {
-            console.log('ere in salt generation');
-            next(result);
-        }
-        salt = result;
-    });*/
-
     if(!user.isModified('password'))
         return next();
-
     bcrypt.hash(user.password,null,null,function(err,hash){
         if(err) return next(err);
         user.password = hash;
